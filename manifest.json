@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "FireChat",
+    "version": "1.0",
+  
+    "description": "A Firefox add-on that leverages the power of OpenAI's ChatGPT to make browsing simpler.",
+  
+    "icons": {
+
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.*.*/*"],
+        "js": ["main.js"]
+      }
+    ]
+  }
+  
