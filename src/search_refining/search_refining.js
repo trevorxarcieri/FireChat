@@ -1,8 +1,11 @@
+import { marked } from "marked";
+
 const searchInputWidgetDivClassName = "RNNXgb";
 
 let handleRefineSearchClick = (refineSearchButton) => {
     refineSearchButton.addEventListener("click", () => {
         console.log("Refine search button clicked");
+        console.log(marked.parse("I am using `markdown`."));
     });
 }
 
