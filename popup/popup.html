@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FireChat</title>
+    <script src="/popup/popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="/popup/popup.css">    
+</head>
+<body>
+    <div id="chat">
+        <div id="chat-header">
+            <div id="chat-header-title">FireChat</div>
+            <div id="chat-header-buttons">
+                <div id="chat-header-minimize"></div>
+                <div id="chat-header-close"></div>
+            </div>
+        </div>
+        <!-- Refactor the body and input divs so the input is displayed at the  -->
+        <div id="chat-body">
+            <div id="chat-body-messages"></div>
+        </div>
+        <div id="chat-footer">
+            <div id="chat-footer-input">
+                <input id="chat-footer-input-text" type="text" placeholder="Type a message...">
+            </div>
+            <div id="chat-footer-buttons">
+                <div id="chat-footer-send"></div>
+            </div>
+        </div>
+    </div>
+</body>
