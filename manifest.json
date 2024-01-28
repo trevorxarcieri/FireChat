@@ -20,6 +20,18 @@
         "default_icon": "/icons/fire-svgrepo-com.svg",
         "default_title": "FireChat",
         "default_popup": "/popup/popup.html"
+    },
+
+    "options_ui": {
+      "page": "options.html"
+    },
+  
+    "permissions": ["storage"],
+  
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{a800ef05-c72f-4ef4-8ed4-8b4faa282d85}"
+      }
     }
   }
   

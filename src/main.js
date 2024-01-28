@@ -1,8 +1,11 @@
+import { refineQuery } from "../module/refine-query.js";
+
 const searchInputWidgetDivClassName = "RNNXgb";
 
 let handleRefineSearchClick = (refineSearchButton) => {
     refineSearchButton.addEventListener("click", () => {
         console.log("Refine search button clicked");
+        refineQuery();
     });
 }
 
