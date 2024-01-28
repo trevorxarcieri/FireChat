@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>FireChat</title>
-    <script src="/popup/popup.js"></script>
-    <link rel="stylesheet" type="text/css" href="/popup/popup.css">    
+    <script src="../../bundles/popup_bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">    
 </head>
-<body>
+<body class="container">
     <div id="chat">
         <div id="chat-header">
-            <div id="chat-header-title">FireChat</div>
+            <h1 class="popup-title">FireChat</h1>
             <div id="chat-header-buttons">
                 <div id="chat-header-minimize"></div>
                 <div id="chat-header-close"></div>
@@ -18,13 +18,11 @@
         <div id="chat-body">
             <div id="chat-body-messages"></div>
         </div>
-        <div id="chat-footer">
-            <div id="chat-footer-input">
-                <input id="chat-footer-input-text" type="text" placeholder="Type a message...">
-            </div>
-            <div id="chat-footer-buttons">
-                <div id="chat-footer-send"></div>
-            </div>
+        <div class="chat-footer">
+            <input class="chat-text" type="text" placeholder="Type a message...">
+            <div id="btn"><embed class="send-button" src="../../icons/send-message-svgrepo-com.svg" width="21" height="21"></embed>
+            </div>        
         </div>
     </div>
 </body>
+</html>

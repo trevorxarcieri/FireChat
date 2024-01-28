@@ -1,3 +1,4 @@
+import { marked } from "marked";
 import { refineQuery } from "../module/refine-query.js";
 
 const searchInputWidgetDivClassName = "RNNXgb";
@@ -5,6 +6,7 @@ const searchInputWidgetDivClassName = "RNNXgb";
 let handleRefineSearchClick = (refineSearchButton) => {
     refineSearchButton.addEventListener("click", () => {
         console.log("Refine search button clicked");
+        console.log(marked.parse("I am using `markdown`."));
         refineQuery();
     });
 }

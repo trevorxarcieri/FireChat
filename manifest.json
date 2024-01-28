@@ -12,14 +12,18 @@
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["bundle/bundle.js"]
+        "js": ["bundles/popup_bundle.js"]
+      },
+      {
+        "matches": ["<all_urls>"],
+        "js": ["bundles/search_refining_bundle.js"]
       }
     ],
 
     "browser_action": {
-        "default_icon": "/icons/fire-svgrepo-com.svg",
+        "default_icon": "icons/fire-svgrepo-com.svg",
         "default_title": "FireChat",
-        "default_popup": "/popup/popup.html"
+        "default_popup": "src/popup/popup.html"
     },
 
     "options_ui": {
