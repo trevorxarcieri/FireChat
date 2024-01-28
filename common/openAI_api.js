@@ -1,7 +1,6 @@
 import openAI from "openai";
 
 const prompt = "Refine the following search query to be more intuitive: ";
-const OPENAI_API_KEY = "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";
 let openai = async () => {
         return new openAI({
         //TODO: use the extensions settings to store the API key and retrieve it from there

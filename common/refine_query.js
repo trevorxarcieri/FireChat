@@ -1,4 +1,4 @@
-import { makeOpenAIApiCall } from "../api/api.js";
+import { makeOpenAIApiCall } from "./openAI_api.js";
 
 const prompt = "Refine the following search query to be more intuitive: ";
 

@@ -1,5 +1,5 @@
 import { marked } from "marked";
-import { refineQuery } from "../module/refine-query.js";
+import { refineQuery } from "../../common/refine_query.js";
 
 const searchInputWidgetDivClassName = "RNNXgb";
 
