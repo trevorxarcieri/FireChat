@@ -1,1 +1,9 @@
-console.log("Hello from popup.js");
+var handleRefineSearchClick = () => {
+  let sendButton = document.getElementsByClassName("chat-footer")[0];
+
+  sendButton.addEventListener("click", () => {
+    console.log("Send button clicked");
+  });
+};
+
+handleRefineSearchClick();
