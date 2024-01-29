@@ -30,8 +30,11 @@
       "page": "settings/options.html"
     },
   
-    "permissions": ["storage"],
-  
+    "permissions": [
+      "storage",
+      "https://api.openai.com/*"
+    ],
+
     "browser_specific_settings": {
       "gecko": {
         "id": "{a800ef05-c72f-4ef4-8ed4-8b4faa282d85}"
