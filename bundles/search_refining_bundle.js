@@ -5648,7 +5648,7 @@ let openai = async () => {
         return new openAI({
         //TODO: use the extensions settings to store the API key and retrieve it from there
         //This will probably be a later step, focus on parsing user text as stated below
-        apiKey: await browser.storage.local.get("OPENAI_API_KEY").OPENAI_API_KEY,
+        apiKey: (await browser.storage.local.get("OPENAI_API_KEY")).OPENAI_API_KEY,
         dangerouslyAllowBrowser: true,
         
     });
